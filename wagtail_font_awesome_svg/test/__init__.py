@@ -1,0 +1,1 @@
+default_app_config = "wagtail_font_awesome_svg.test.apps.WagtailFontAwesomeSvgTestAppConfig"

@@ -5,8 +5,25 @@ Add [Font Awesome 5.14](https://fontawesome.com/icons?d=gallery&m=free) SVG icon
 Note: Wagtail does not officially support SVG icons yet, but is working towards it.
 See Wagtail issue [#6107](https://github.com/wagtail/wagtail/issues/6107) for progress.
 
+[![License](https://img.shields.io/badge/License-BSD_3--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)
+[![PyPI version](https://badge.fury.io/py/wagtail-font-awesome-svg.svg)](https://badge.fury.io/py/wagtail-font-awesome-svg)
+[![Font Awesome SVG CI](https://github.com/allcaps/wagtail-font-awesome-svg/actions/workflows/test.yml/badge.svg)](https://github.com/allcaps/wagtail-font-awesome-svg/actions/workflows/test.yml)
 
-## Install
+## Links
+
+- [Documentation](https://github.com/allcaps/wagtail-font-awesome-svg/blob/main/README.md)
+- [Changelog](https://github.com/allcaps/wagtail-font-awesome-svg/blob/main/CHANGELOG.md)
+- [Contributing](https://github.com/allcaps/wagtail-font-awesome-svg/blob/main/CHANGELOG.md)
+- [Discussions](https://github.com/allcaps/wagtail-font-awesome-svg/discussions)
+- [Security](https://github.com/allcaps/wagtail-font-awesome-svg/security)
+
+## Supported versions
+
+- Python ...
+- Django ...
+- Wagtail ...
+
+## Installation
 
     pip install wagtail-font-awesome-svg
 
@@ -16,7 +33,6 @@ Add `wagtailfontawesomesvg` to your installed apps.
         'wagtailfontawesomesvg',
     ]
 
-    
 ## Usage
 
 This is an [overview of available icons](https://fontawesome.com/icons?d=gallery&m=free). 

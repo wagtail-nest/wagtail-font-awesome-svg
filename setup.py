@@ -1,41 +1,48 @@
-import setuptools
+#!/usr/bin/env python
 
-with open("README.md", "r") as fh:
-    long_description = fh.read()
+from os import path
 
-setuptools.setup(
+from setuptools import find_packages, setup
+
+from wagtail_font_awesome_svg import __version__
+
+
+this_directory = path.abspath(path.dirname(__file__))
+with open(path.join(this_directory, "README.md"), encoding="utf-8") as f:
+    long_description = f.read()
+
+setup(
     name="wagtail-font-awesome-svg",
-    version="0.0.3",
-    author="Coen van der Kamp",
-    author_email="coen@fourdigits.nl",
+    version=__version__,
     description="Font Awesome icons as SVG for Wagtail",
     long_description=long_description,
-    long_description_content_type="text/markdown",
-    url="https://github.com/allcaps/wagtail-font-awesome-svg",
-    packages=setuptools.find_packages(),
-    classifiers=[
-        'Development Status :: 3 - Alpha',
-        'Environment :: Web Environment',
-        'Intended Audience :: Developers',
-        # 'CC BY 4.0 License'  # TODO Find trove classifier.
-        'License :: OSI Approved :: SIL Open Font License 1.1 (OFL-1.1)',
-        'License :: OSI Approved :: MIT License',
-        'Operating System :: OS Independent',
-        'Programming Language :: Python',
-        'Framework :: Django',
-        'Framework :: Django :: 2.2',
-        'Framework :: Django :: 3.0',
-        'Framework :: Django :: 3.1',
-        'Framework :: Django :: 3.2',
-        'Framework :: Django :: 4',
-        'Framework :: Django :: 4.0',
-        'Framework :: Django :: 4.1',
-        'Framework :: Wagtail',
-        'Framework :: Wagtail :: 2',
-        'Framework :: Wagtail :: 3',
-        'Framework :: Wagtail :: 4',
-        'Topic :: Internet :: WWW/HTTP :: Site Management',
-    ],
-    python_requires='>=3.6',
+    long_description_content_type='text/markdown',
+    author="Coen van der Kamp",
+    author_email="coen@fourdigits.nl",
+    url="",
+    packages=find_packages(),
     include_package_data=True,
+    license="BSD",
+    classifiers=[
+        "Development Status :: 3 - Alpha",
+        "Intended Audience :: Developers",
+        "License :: OSI Approved :: BSD License",
+        "Operating System :: OS Independent",
+        "Programming Language :: Python",
+        "Programming Language :: Python :: 3",
+        "Programming Language :: Python :: 3.7",
+        "Programming Language :: Python :: 3.8",
+        "Programming Language :: Python :: 3.9",
+        "Framework :: Django",
+        "Framework :: Django :: 3.0",
+        "Framework :: Django :: 3.1",
+        "Framework :: Django :: 3.2",
+        "Framework :: Wagtail",
+        "Framework :: Wagtail :: 2",
+    ],
+    install_requires=["Django>=3.0,<4.0", "Wagtail>=2.14,<2.16"],
+    extras_require={
+        "testing": ["dj-database-url==0.5.0", "freezegun==0.3.15"],
+    },
+    zip_safe=False,
 )
