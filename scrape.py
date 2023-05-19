@@ -16,8 +16,6 @@ for directory in [
         with open(src_filename, "r") as src_file:
             soup = BeautifulSoup(src_file.read(), "html.parser")
             tag = soup.find("svg")
-            tag.name = "symbol"
-            del tag['xmlns']
 
             filename = os.path.basename(src_filename)
             tag['id'] = f"icon-{filename[:-4]}"
