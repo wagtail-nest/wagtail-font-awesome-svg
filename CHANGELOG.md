@@ -9,6 +9,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - ...
 
+## [1.0.1] - 2022-10-04
+
+- Update readme and examples.
+
 ## [1.0] - 2022-10-04
 
 - FontAwesome 6 support.
@@ -30,7 +34,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Initial release.
 
 
-[unreleased]: https://github.com/wagtail-nest/wagtail-font-awesome-svg/compare/1.0...HEAD
+[unreleased]: https://github.com/wagtail-nest/wagtail-font-awesome-svg/compare/1.0.1...HEAD
+[1.0.1]: https://github.com/wagtail-nest/wagtail-font-awesome-svg/compare/1.0...1.0.1
 [1.0]: https://github.com/wagtail-nest/wagtail-font-awesome-svg/compare/0.0.4...1.0
 [0.0.4]: https://github.com/wagtail-nest/wagtail-font-awesome-svg/compare/0.0.3...0.0.4
 [0.0.3]: https://github.com/wagtail-nest/wagtail-font-awesome-svg/tree/0.0.3
