@@ -26,7 +26,7 @@ Choose an icon and add it via your `wagtail_hooks.py`:
     def register_icons(icons):
         return icons + [
             'wagtailfontawesomesvg/brands/facebook.svg',
-            'wagtailfontawesomesvg/regular/laugh.svg',
+            'wagtailfontawesomesvg/regular/face-laugh.svg',
             'wagtailfontawesomesvg/solid/yin-yang.svg',
             ...
         ]
