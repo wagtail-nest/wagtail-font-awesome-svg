@@ -1,9 +1,6 @@
 # Wagtail Font Awesome SVG
 
-Add [Font Awesome 5.14](https://fontawesome.com/icons?d=gallery&m=free) SVG icons to your Wagtail project.
-
-Note: Wagtail does not officially support SVG icons yet, but is working towards it.
-See Wagtail issue [#6107](https://github.com/wagtail/wagtail/issues/6107) for progress.
+Add [Font Awesome](https://fontawesome.com/icons?d=gallery&m=free) SVG icons to your Wagtail project.
 
 ## Install
 
