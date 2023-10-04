@@ -1,6 +1,6 @@
 import os
 
-from bs4 import BeautifulSoup
+from bs4 import BeautifulSoup, Comment
 
 import glob
 
@@ -16,11 +16,13 @@ for directory in [
         with open(src_filename, "r") as src_file:
             soup = BeautifulSoup(src_file.read(), "html.parser")
             tag = soup.find("svg")
-            tag.name = "symbol"
-            del tag['xmlns']
 
             filename = os.path.basename(src_filename)
-            tag['id'] = f"icon-{filename[:-4]}"
+            id = filename[:-4]
+            tag['id'] = f"icon-{id}"
+
+            # Insert licensing information as a comment.
+            tag.insert(0, Comment(f" {id} ({directory}): Font Awesome Pro 5.14.0 "))
 
             target_filename = os.path.join(
                 BASE_DIR,
