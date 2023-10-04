@@ -5,13 +5,13 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="wagtail-font-awesome-svg",
-    version="0.0.3",
+    version="0.0.4",
     author="Coen van der Kamp",
     author_email="coen@fourdigits.nl",
     description="Font Awesome icons as SVG for Wagtail",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/allcaps/wagtail-font-awesome-svg",
+    url="https://github.com/wagtail-nest/wagtail-font-awesome-svg",
     packages=setuptools.find_packages(),
     classifiers=[
         'Development Status :: 3 - Alpha',
@@ -23,7 +23,6 @@ setuptools.setup(
         'Operating System :: OS Independent',
         'Programming Language :: Python',
         'Framework :: Django',
-        'Framework :: Django :: 3.2',
         'Framework :: Django :: 4.0',
         'Framework :: Django :: 4.1',
         'Framework :: Wagtail',
