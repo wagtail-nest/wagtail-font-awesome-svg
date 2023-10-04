@@ -12,7 +12,7 @@ for directory in [
     "regular",
     "solid",
 ]:
-    for src_filename in glob.glob(f"fontawesome-free-5.14.0-web/svgs/{directory}/*.svg"):
+    for src_filename in glob.glob(f"fontawesome-free-6.4.0-web/svgs/{directory}/*.svg"):
         with open(src_filename, "r") as src_file:
             soup = BeautifulSoup(src_file.read(), "html.parser")
             tag = soup.find("svg")
@@ -21,8 +21,12 @@ for directory in [
             id = filename[:-4]
             tag['id'] = f"icon-{id}"
 
-            # Insert licensing information as a comment.
-            tag.insert(0, Comment(f" {id} ({directory}): Font Awesome Pro 5.14.0 "))
+            # Remove existing licensing comment.
+            for comment in tag.find_all(string=lambda text: isinstance(text, Comment)):
+                comment.extract()
+
+            # Add back our shorter, human-readable comment.
+            tag.insert(0, Comment(f" {id} ({directory}): Font Awesome Free 6.4.0 CC BY 4.0"))
 
             target_filename = os.path.join(
                 BASE_DIR,
