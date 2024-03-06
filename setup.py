@@ -30,6 +30,6 @@ setuptools.setup(
         'Framework :: Wagtail :: 5',
         'Topic :: Internet :: WWW/HTTP :: Site Management',
     ],
-    python_requires='>=3.7',
+    python_requires='>=3.8',
     include_package_data=True,
 )
