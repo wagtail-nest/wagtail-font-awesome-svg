@@ -4,26 +4,32 @@ Add [Font Awesome](https://fontawesome.com/icons?d=gallery&m=free) SVG icons to 
 
 ## Install
 
-    pip install wagtail-font-awesome-svg
+```sh
+pip install wagtail-font-awesome-svg
+```
 
 Add `wagtailfontawesomesvg` to your installed apps.
 
-    INSTALLED_APPS = [
-        'wagtailfontawesomesvg',
-    ]
+```python
+INSTALLED_APPS = [
+    'wagtailfontawesomesvg',
+]
+```
 
 ## Usage
 
 This is an [overview of available icons](https://fontawesome.com/icons?d=gallery&m=free). 
 Choose an icon and add it via your `wagtail_hooks.py`:
 
-    from wagtail import hooks
+```python
+from wagtail import hooks
 
-    @hooks.register("register_icons")
-    def register_icons(icons):
-        return icons + [
-            'wagtailfontawesomesvg/brands/facebook.svg',
-            'wagtailfontawesomesvg/regular/face-laugh.svg',
-            'wagtailfontawesomesvg/solid/yin-yang.svg',
-            ...
-        ]
+@hooks.register("register_icons")
+def register_icons(icons):
+    return icons + [
+        'wagtailfontawesomesvg/brands/facebook.svg',
+        'wagtailfontawesomesvg/regular/face-laugh.svg',
+        'wagtailfontawesomesvg/solid/yin-yang.svg',
+        ...
+    ]
+```
