@@ -26,7 +26,6 @@ setuptools.setup(
         'Framework :: Django :: 4.2',
         'Framework :: Django :: 5.0',
         'Framework :: Wagtail',
-        'Framework :: Wagtail :: 4',
         'Framework :: Wagtail :: 5',
         'Framework :: Wagtail :: 6',
         'Topic :: Internet :: WWW/HTTP :: Site Management',
