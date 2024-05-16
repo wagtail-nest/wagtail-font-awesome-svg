@@ -12,7 +12,7 @@ for directory in [
     "regular",
     "solid",
 ]:
-    for src_filename in glob.glob(f"fontawesome-free-6.4.0-web/svgs/{directory}/*.svg"):
+    for src_filename in glob.glob(f"fontawesome-free-6.5.2-web/svgs/{directory}/*.svg"):
         with open(src_filename, "r") as src_file:
             soup = BeautifulSoup(src_file.read(), "html.parser")
             tag = soup.find("svg")
