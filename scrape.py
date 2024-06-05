@@ -26,7 +26,7 @@ for directory in [
                 comment.extract()
 
             # Add back our shorter, human-readable comment.
-            tag.insert(0, Comment(f" {id} ({directory}): Font Awesome Free 6.4.0 CC BY 4.0"))
+            tag.insert(0, Comment(f" {id} ({directory}): Font Awesome Free 6.5.2 CC BY 4.0"))
 
             target_filename = os.path.join(
                 BASE_DIR,
