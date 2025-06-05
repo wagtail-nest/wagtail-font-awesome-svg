@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="wagtail-font-awesome-svg",
-    version="1.0.1",
+    version="1.1",
     author="Coen van der Kamp",
     author_email="coen@fourdigits.nl",
     description="Font Awesome icons as SVG for Wagtail",
