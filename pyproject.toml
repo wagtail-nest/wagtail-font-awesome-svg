@@ -1,44 +1,51 @@
 [build-system]
-requires = ["setuptools>=77.0"]
 build-backend = "setuptools.build_meta"
+
+requires = [ "setuptools>=77" ]
 
 [project]
 name = "wagtail-font-awesome-svg"
 version = "1.1"
 description = "Font Awesome 6 icons as SVG for Wagtail"
-license-files = ["LICENSE"]
-license = "MIT AND CC-BY-4.0"
 readme = "README.md"
+license = "MIT AND CC-BY-4.0"
+license-files = [ "LICENSE" ]
 authors = [
-    { name = "Coen van der Kamp", email = "coen@fourdigits.nl" }
-]
-dependencies = [
-    "wagtail",
+  { name = "Coen van der Kamp", email = "coen@fourdigits.nl" },
 ]
 requires-python = ">=3.8"
 classifiers = [
-    "Development Status :: 5 - Production/Stable",
-    "Environment :: Web Environment",
-    "Intended Audience :: Developers",
-    "Operating System :: OS Independent",
-    "Programming Language :: Python",
-    "Framework :: Django",
-    "Framework :: Django :: 4.2",
-    "Framework :: Django :: 5.1",
-    "Framework :: Django :: 5.2",
-    "Framework :: Wagtail",
-    "Framework :: Wagtail :: 5",
-    "Framework :: Wagtail :: 6",
-    "Framework :: Wagtail :: 7",
-    "Topic :: Internet :: WWW/HTTP :: Site Management",
+  "Development Status :: 5 - Production/Stable",
+  "Environment :: Web Environment",
+  "Framework :: Django",
+  "Framework :: Django :: 4.2",
+  "Framework :: Django :: 5.1",
+  "Framework :: Django :: 5.2",
+  "Framework :: Wagtail",
+  "Framework :: Wagtail :: 5",
+  "Framework :: Wagtail :: 6",
+  "Framework :: Wagtail :: 7",
+  "Intended Audience :: Developers",
+  "Operating System :: OS Independent",
+  "Programming Language :: Python",
+  "Programming Language :: Python :: 3 :: Only",
+  "Programming Language :: Python :: 3.8",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: 3.13",
+  "Topic :: Internet :: WWW/HTTP :: Site Management",
 ]
 
-[project.urls]
-Homepage = "https://github.com/wagtail-nest/wagtail-font-awesome-svg"
-Changelog = "https://github.com/wagtail-nest/wagtail-font-awesome-svg/blob/main/CHANGELOG.md"
+dependencies = [
+  "wagtail",
+]
+urls.Changelog = "https://github.com/wagtail-nest/wagtail-font-awesome-svg/blob/main/CHANGELOG.md"
+urls.Homepage = "https://github.com/wagtail-nest/wagtail-font-awesome-svg"
 
 [tool.setuptools]
 include-package-data = true
 
 [tool.setuptools.packages.find]
-where = ["."]
+where = [ "." ]
