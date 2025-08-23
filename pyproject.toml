@@ -12,6 +12,9 @@ readme = "README.md"
 authors = [
     { name = "Coen van der Kamp", email = "coen@fourdigits.nl" }
 ]
+dependencies = [
+    "wagtail",
+]
 requires-python = ">=3.8"
 classifiers = [
     "Development Status :: 5 - Production/Stable",
