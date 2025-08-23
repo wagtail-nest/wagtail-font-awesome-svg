@@ -1,23 +1,22 @@
 [build-system]
-requires = ["setuptools>=61.0"]
+requires = ["setuptools>=77.0"]
 build-backend = "setuptools.build_meta"
 
 [project]
 name = "wagtail-font-awesome-svg"
 version = "1.1"
 description = "Font Awesome icons as SVG for Wagtail"
+license-files = ["LICENSE"]
+license = "MIT AND CC-BY-4.0"
 readme = "README.md"
 authors = [
     { name = "Coen van der Kamp", email = "coen@fourdigits.nl" }
 ]
-license = { file = "LICENSE" }
 requires-python = ">=3.8"
 classifiers = [
     "Development Status :: 3 - Alpha",
     "Environment :: Web Environment",
     "Intended Audience :: Developers",
-    "License :: OSI Approved :: SIL Open Font License 1.1 (OFL-1.1)",
-    "License :: OSI Approved :: MIT License",
     "Operating System :: OS Independent",
     "Programming Language :: Python",
     "Framework :: Django",
