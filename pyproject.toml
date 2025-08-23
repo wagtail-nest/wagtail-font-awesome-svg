@@ -5,7 +5,7 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "wagtail-font-awesome-svg"
 version = "1.1"
-description = "Font Awesome icons as SVG for Wagtail"
+description = "Font Awesome 6 icons as SVG for Wagtail"
 license-files = ["LICENSE"]
 license = "MIT AND CC-BY-4.0"
 readme = "README.md"

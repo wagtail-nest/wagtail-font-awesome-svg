@@ -1,6 +1,6 @@
 # Wagtail Font Awesome SVG
 
-Add [Font Awesome](https://fontawesome.com/icons?d=gallery&m=free) SVG icons to your Wagtail project.
+Add [Font Awesome v6](https://fontawesome.com/v6/icons?m=free&d=gallery) SVG icons to your Wagtail project. Only the `solid`, `regular` and `brands` icons are included.
 
 ## Install
 
@@ -18,7 +18,7 @@ INSTALLED_APPS = [
 
 ## Usage
 
-This is an [overview of available icons](https://fontawesome.com/icons?d=gallery&m=free). 
+This is an [overview of available icons](https://fontawesome.com/v6/icons?m=free&d=gallery). 
 Choose an icon and add it via your `wagtail_hooks.py`:
 
 ```python
