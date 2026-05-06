@@ -1,6 +1,5 @@
 [build-system]
 build-backend = "setuptools.build_meta"
-
 requires = [ "setuptools>=77" ]
 
 [project]
@@ -13,7 +12,7 @@ license-files = [ "LICENSE" ]
 authors = [
   { name = "Coen van der Kamp", email = "coen@fourdigits.nl" },
 ]
-requires-python = ">=3.8"
+requires-python = ">=3.10"
 classifiers = [
   "Development Status :: 5 - Production/Stable",
   "Environment :: Web Environment",
@@ -21,31 +20,26 @@ classifiers = [
   "Framework :: Django :: 4.2",
   "Framework :: Django :: 5.1",
   "Framework :: Django :: 5.2",
+  "Framework :: Django :: 6.0",
   "Framework :: Wagtail",
-  "Framework :: Wagtail :: 5",
-  "Framework :: Wagtail :: 6",
   "Framework :: Wagtail :: 7",
   "Intended Audience :: Developers",
   "Operating System :: OS Independent",
   "Programming Language :: Python",
   "Programming Language :: Python :: 3 :: Only",
-  "Programming Language :: Python :: 3.8",
-  "Programming Language :: Python :: 3.9",
   "Programming Language :: Python :: 3.10",
   "Programming Language :: Python :: 3.11",
   "Programming Language :: Python :: 3.12",
   "Programming Language :: Python :: 3.13",
+  "Programming Language :: Python :: 3.14",
   "Topic :: Internet :: WWW/HTTP :: Site Management",
 ]
-
 dependencies = [
-  "wagtail",
+  "wagtail>=7",
 ]
 urls.Changelog = "https://github.com/wagtail-nest/wagtail-font-awesome-svg/blob/main/CHANGELOG.md"
 urls.Homepage = "https://github.com/wagtail-nest/wagtail-font-awesome-svg"
 
 [tool.setuptools]
 include-package-data = true
-
-[tool.setuptools.packages.find]
-where = [ "." ]
+packages.find.where = [ "." ]

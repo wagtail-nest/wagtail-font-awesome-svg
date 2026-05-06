@@ -5,6 +5,14 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [Unreleased]
+
+- Drop support for Python 3.8 and 3.9 (both end-of-life).
+- Add support for Python 3.14.
+- Add support for Django 6.0.
+- Drop Wagtail 5 and Wagtail 6 classifiers (both end-of-life). Supported Wagtail range is now 7.0 LTS through 7.4 LTS.
+- Pin minimum Wagtail to 7.0.
+
 ## [2.0] - 2025-08-23
 
 - Update icons for Font Awesome 7.0.0 by @Stormheg in #19
